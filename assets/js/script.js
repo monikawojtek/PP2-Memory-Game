@@ -82,6 +82,72 @@ const generateMemo = () => {
     selectors.playGround.replaceWith(parser.querySelector('.playGround'));
 };
 
+/** function to start the Memo game  */
+
+const startMemo = () => {
+    state.memoStarted = true;
+    selectors.start.classList.add('disabled');
+
+    state.loop = setInterval(() => {
+        state.totalClock++;
+
+        selectors.trials.innerText = `${state.totalFlicks} moves`;
+        selectors.clock.innerText = `time: ${state.totalClock} sec`;
+    }, 1000);
+};
+
+/**function to flick the symbols */
+const flickBackSymbol = () => {
+    document.querySelectorAll('.symbol:not(.matched)').forEach(symbol => {
+        symbol.classList.remove('flicked');
+    });
+
+    state.flickedSymbols = 0;
+};
+
+const flickSymbol = symbol => {
+    state.flickedSymbols++;
+    state.totalFlicks++;
+
+    if (!state.memoStarted) {
+        startMemo();
+    }
+
+    if (state.flickedSymbols <= 2) {
+        symbol.classList.add('flicked');
+    }
+
+    if (state.flickedSymbols === 2) {
+        const flickedSymbols = document.querySelectorAll('.flicked:not(.matched)');
+
+        if (flickedSymbols[0].innerText === flickedSymbols[1].innerText) {
+            flickedSymbols[0].classList.add('matched');
+            flickedSymbols[1].classList.add('matched');
+        }
+
+        setTimeout(() => {
+            flickBackSymbol();
+        }, 1000);
+    }
+
+    /**  If there are no more symbols that we can flicked, we won the Memory Game */
+    
+    if (!document.querySelectorAll('.symbol:not(.flicked)').length) {
+        setTimeout(() => {
+            selectors.playGroundContainer.classList.add('flicked');
+            selectors.win.innerHTML = `
+                <span class="win-text">
+                    You won!<br />
+                    with <span class="highlight">${state.totalFlicks}</span> moves<br />
+                    under <span class="highlight">${state.totalClock}</span> seconds
+                </span>
+            `;
+
+            clearInterval(state.loop);
+        }, 1000);
+    }
+};
+
 
 /** Event Listeners for the cards holding symbols and the start button  */
 const attachEventListeners = () => {
