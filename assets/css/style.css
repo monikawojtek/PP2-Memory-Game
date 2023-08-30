@@ -27,7 +27,7 @@ button {
     border: 0;
     cursor: pointer;
     font-family: Fredoka;
-    font-size: 25pt;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -132,4 +132,112 @@ button {
 
 .highlight {
     color: #06c8eb;
+}
+
+@media (max-width: 1200px) {
+    .playGround {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-gap: 20px;
+    }
+
+    .playGround-container {
+        position: relative;
+    }
+}
+
+@media (max-width: 700px) {
+    .playGround {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-gap: 18px;
+    }
+
+    .playGround-container {
+        position: relative;
+    }
+}
+
+@media (max-width: 570px) {
+    .memo {
+
+        top: 50%;
+        left: 50%;
+        position: absolute;
+    }
+
+    .commands {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10%;
+    }
+
+    button {
+
+        border-radius: 2px;
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .disabled {
+        color: #131B23;
+    }
+
+    .results {
+        color: #2274A5;
+        font-size: 14pt;
+    }
+
+    .playGround {
+        padding: 5px;
+        grid-gap: 5px;
+        position: relative;
+    }
+
+
+    .playGround,
+    .win {
+        border-radius: 2px;
+        box-shadow: 0 10px 15px rgb(233 241 247/ 25%);
+    }
+
+
+    .symbol {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .symbol-front,
+    .symbol-back {
+
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .symbol-back {
+        transform: rotateY(180deg) rotateZ(50deg);
+        font-size: 14pt;
+        line-height: 50px;
+
+    }
+
+    .win {
+
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 75%;
+    }
+
+    .win-text {
+        top: 25%;
+        left: 25%;
+        font-size: 14pt;
+    }
 }
