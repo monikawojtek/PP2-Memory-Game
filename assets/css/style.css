@@ -178,12 +178,8 @@ button {
 
         border-radius: 2px;
         padding: 5px 10px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 100;
-    }
-
-    .disabled {
-        color: #131B23;
     }
 
     .results {
