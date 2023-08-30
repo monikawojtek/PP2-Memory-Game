@@ -1,0 +1,135 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: #2274A5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.memo {
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.commands {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #816C61;
+    color: #E7DFC6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: Fredoka;
+    font-size: 25pt;
+    font-weight: 300;
+}
+
+.disabled {
+    color: #131B23;
+}
+
+.results {
+    color: #2274A5;
+    font-size: 14pt;
+}
+
+.playGround {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+}
+
+.playGround-container {
+    position: relative;
+}
+
+
+.playGround,
+.win {
+    border-radius: 5px;
+    box-shadow: 0 25px 50px rgb(233 241 247/ 25%);
+    background: #E7DFC6;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+    position: relative;
+}
+
+
+.playGround-container.flicked .playGround {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.playGround-container.flicked .win {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.symbol {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.symbol-front,
+.symbol-back {
+
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #816C61;
+    transition: transform .7s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.symbol-back {
+    transform: rotateY(180deg) rotateZ(50deg);
+    font-size: 28pt;
+    user-select: none;
+    text-align: center;
+    line-height: 100px;
+    background: #E9F1F7;
+}
+
+.symbol.flicked .symbol-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.symbol.flicked .symbol-back {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.win {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background: #E7DFC6;
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.win-text {
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 21pt;
+    color: #2274A5;
+}
+
+.highlight {
+    color: #06c8eb;
+}
