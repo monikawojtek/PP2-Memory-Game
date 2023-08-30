@@ -35,6 +35,8 @@ The fully responsive design (HTML and CSS built, no symbols to improve responsiv
  
  ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/603b4ee7-23b9-4376-91c9-0a3736f237d6)
 
+ Button the writing changes colour of text when pressed or when the game is started:
+
  
 ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/8806d357-a3bd-4416-98c9-38a1f43b78cf)
 
@@ -52,6 +54,17 @@ Technologies Used
 
 Languages Used • HTML5 • CSS3 • JavaScript
 
+Frameworks, Libraries & Programs Used
+
+List out the tools you used:
+
+•	Balsamiq
+•	coolors.co
+•	GitPod
+•	GitHub
+•	CodeAnywhere 
+
+
 Verification:
 
 W3C CSS & HTML Validator - Results
@@ -65,7 +78,7 @@ W3C CSS & HTML Validator - Results
 
 Chrome – Lighthouse 
 
- ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/d76c1cd3-f6c3-440c-8940-a4d2b26eb4be)
+![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/bc25b898-92a9-44c0-bdfe-9b702eb8cf7d)
 
 
 Making a Local Clone
@@ -82,19 +95,26 @@ https://github.com/monikawojtek/PP2-Memory-Game
 Credits
 
 Code 
+
 • Used Codeanwhere app to creat code 
 • CodeInstitute template was used for creation of the respiratory in the first place. 
 
 Content 
+
 • All content was written by the developer following the guidance of the tutorial on LoveMaths walkthrough project on the Code Institute platform. 
 • Icons were copied from WhatsApp application.
 
 Acknowledgements 
+
 • Code Institute – their website learning program 
 • My Mentor for continuous helpful feedback. 
 • Tutor support at Code Institute for their support.  
 
 Tutorial used: 
+
 • https://www.codingnepalweb.com/
+• https://forum.pasja-informatyki.pl/
+• https://pl.khanacademy.org/computing/computer-programming/programming-games-visualizations/memory-game/pp/project-memory
+• https://kursjs.pl/kurs/gry/memory/memory-game.html
 
 
