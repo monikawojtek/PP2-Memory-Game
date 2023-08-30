@@ -1,39 +1,58 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+UX
+Target Audience
+The game is aimed at people who would like to practise their memory and relax/switch off a little 😊 
+Project Goals
+•	Goal of this project is to provide relaxing entertainment for a user.
+•	User friendly design with icons that require user to focus and remember details of the icons presented on the cards.
+•	With Blackjack Game, you can satisfy your gambling need safely (without the risk of losing money).
+Design
+![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/49660d77-21a4-420c-b1cc-3d0b65c6d329)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ 
+ ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/603b4ee7-23b9-4376-91c9-0a3736f237d6)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+ 
+![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/8806d357-a3bd-4416-98c9-38a1f43b78cf)
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+ ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/cabbbfd4-2cf4-4d69-a0fd-bc0b02bf67a6)
 
-`python3 -m http.server`
+Colours
+ ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/9a5ed6fe-a085-43d4-8280-6a70aa7d4d3f)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Technologies Used
+Languages Used • HTML5 • CSS3 • JavaScript
 
-`http_server`
+Verification:
+W3C CSS & HTML Validator - Results
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/e41640ff-7800-4d43-b0af-2856a3ce0dd4)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/6c6896fc-c2fc-41a9-ac1d-5f65cb35a605)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ 
 
-To log into the Heroku toolbelt CLI:
+Chrome – Lighthouse 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/d76c1cd3-f6c3-440c-8940-a4d2b26eb4be)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+Making a Local Clone
+1.	Log in to GitHub and locate the GitHub Repository –
+https://github.com/monikawojtek/PP2-Memory-Game  
+2.	Under the repository name, click "Clone or download".
+3.	To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4.	Open Git Bash
+5.	Change the current working directory to the location where you want the cloned directory to be made.
+6.	Type git clone, and then paste the URL you copied in Step 3. $ git clone https://monikawojtek.github.io/PP2-Memory-Game/ 
+7.	Press Enter. Your local clone will be created. Click Here to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Happy coding!
+Credits
+Code • Used Codeanwhere app to creat code • CodeInstitute template was used for creation of the respiratory in the first place. •
+Content • All content was written by the developer following the guidance of the tutorial on love running walkthrough project on the Code Institute platform. Icons were copied from WhatsApp application.
+Acknowledgements • Code Institute – their website learning program • My Mentor for continuous helpful feedback. • Tutor support at Code Institute for their support. • 
+Tutorial used: https://www.codingnepalweb.com/
+
+
