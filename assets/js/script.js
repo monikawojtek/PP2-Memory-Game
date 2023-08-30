@@ -24,6 +24,7 @@ const state = {
 
 /** Creating the Memo PlayGround based on the data-dimension attribute. using DOMParser and PickRandom  and shuffel functions  */
 
+/** using Fisher-Yates shuffling algorithm  */
 
 const shuffle = array => {
     const clonedArray = [...array];
@@ -82,7 +83,20 @@ const generateMemo = () => {
 };
 
 
+/** Event Listeners for the cards holding symbols and the start button  */
+const attachEventListeners = () => {
+    document.addEventListener('click', event => {
+        const eventTarget = event.target;
+        const eventParent = eventTarget.parentElement;
 
-
+        if (eventTarget.className.includes('symbol') && !eventParent.className.includes('flicked')) {
+            flickSymbol(eventParent);
+        } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
+            startMemo();
+        }
+    });
+};
+;
 
 generateMemo();
+attachEventListeners();
