@@ -6,7 +6,9 @@ Project Goals
 •	Goal of this project is to provide relaxing entertainment for a user.
 •	User friendly design with icons that require user to focus and remember details of the icons presented on the cards.
 •	With Blackjack Game, you can satisfy your gambling need safely (without the risk of losing money).
+
 Design
+
 ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/49660d77-21a4-420c-b1cc-3d0b65c6d329)
 
  
@@ -23,10 +25,12 @@ Colours
 
 
 Technologies Used
+
 Languages Used • HTML5 • CSS3 • JavaScript
 
 Verification:
 W3C CSS & HTML Validator - Results
+
 
  ![image](https://github.com/monikawojtek/PP2-Memory-Game/assets/134314429/e41640ff-7800-4d43-b0af-2856a3ce0dd4)
 
